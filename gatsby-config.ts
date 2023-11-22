@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
     siteTitleAlt: `Tejas Shastry - Portfolio`,
     siteHeadline: `Tejas Shastry's personal website`,
     siteUrl: `https://its-tejas.com`,
-    siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    siteDescription: `Tejas-Shastry portfolio`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
     author: `@lekoarts_de, @tanekere`,
@@ -51,14 +51,14 @@ const config: GatsbyConfig = {
       },
     },
     // You can remove this plugin if you don't need it
-    shouldAnalyseBundle && {
-      resolve: `gatsby-plugin-webpack-statoscope`,
-      options: {
-        saveReportTo: `${__dirname}/public/.statoscope/_bundle.html`,
-        saveStatsTo: `${__dirname}/public/.statoscope/_stats.json`,
-        open: false,
-      },
-    },
+    // shouldAnalyseBundle && {
+    //   resolve: `gatsby-plugin-webpack-statoscope`,
+    //   options: {
+    //     saveReportTo: `${__dirname}/public/.statoscope/_bundle.html`,
+    //     saveStatsTo: `${__dirname}/public/.statoscope/_stats.json`,
+    //     open: false,
+    //   },
+    // },
   ].filter(Boolean) as Array<PluginRef>,
 }
 
